@@ -1,8 +1,6 @@
 body.index{
 background-color: #fff;
 }
-
-
 .index header{
 
     margin: 10px;
@@ -38,25 +36,103 @@ align-items: center;
 font-size: 15px;
 }
 
-.index ul li:nth-child(6) {
-    margin-right: 50px;
-    }
 .index ul li i{
     font-size: 20px;
 }
 
-.index ul .div-title {
+.index .div-title {
     display: flex;
     margin: 0;
     padding: 0;
     align-items: center;
+    color: #8acdeb;
 
 }
 .index ul .p-title {
     color: #8acdeb;
-    font-size: large;
-    
+    font-size: 30px;
+    font-weight: bold;
     padding: 0;
     margin: 0;
     
+}
+
+main.index-main{
+    background-color: #8acdeb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 20% 0 20%;
+    padding: 20px;
+    border-radius: 20px 20px 0 20px;
+    
+}
+
+.index-main .filter-option{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.index-main .filter-option h1{
+    margin-bottom: 2dvh;
+}
+
+.index-main .filter-option .search-filter{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.index-main .filter-option .search-filter input{
+    border-radius: 5px;
+    padding: 5px;
+}
+.index-main .filter-option .search-filter .Date-Div{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    gap: 15px;
+}
+.index-main .filter-option .search-filter .Date-Div input{
+    padding: 20px 0 0 10px;
+}
+.index-main .filter-option .search-filter .Date-Div .desde{
+    position: absolute;
+    left: 10px;
+    transform: translateY(50%);
+    font-size: 11px;
+    font-weight: bold;
+}
+.index-main .filter-option .search-filter .Date-Div .hasta{
+    position: absolute;
+    left: 10px;
+    transform: translateY(50%);
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.index-main .filter-option .search-filter .div-buttom-search{
+    position: relative;
+}
+
+.index-main .filter-option .search-filter .div-buttom-search input{
+    padding: 10px 10px 10px 25px;
+    border: none;
+    background-color: orangered;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.index-main .filter-option .search-filter .div-buttom-search i{
+    position: absolute;
+    right: 55px;
+    transform: translateY(55%); 
+    cursor: pointer;
+}
+
+.index-main .filter-option .search-filter .div-buttom-search:hover{
+    opacity: 85%;
 }
