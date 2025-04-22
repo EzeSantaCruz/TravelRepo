@@ -1,8 +1,8 @@
 body.index{
-background-color: #fff;
+    background-color: #fff;
 }
-.index header{
 
+.index header{
     margin: 10px;
     padding: 2px;
 }
@@ -58,14 +58,16 @@ font-size: 15px;
 }
 
 main.index-main{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.index-main .section-search{
     background-color: #8acdeb;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     margin: 0 20% 0 20%;
     padding: 20px;
     border-radius: 20px 20px 0 20px;
-    
 }
 
 .index-main .filter-option{
@@ -135,4 +137,30 @@ main.index-main{
 
 .index-main .filter-option .search-filter .div-buttom-search:hover{
     opacity: 85%;
+}
+
+.index-main .section-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px;
+    gap: 10px;
+}
+.index-main .card{
+    width: 300px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    
+}
+
+.index-main .card .card-img img{
+    /* width: 18rem; */
+    width: 100%;
+    height: auto;
+}
+.index-main .card .card-body{
+    padding: 10px;
 }
