@@ -8,7 +8,10 @@ body.index{
 }
 
 .index nav{
-    padding: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+
 }
 
 .index ul {
@@ -40,21 +43,11 @@ font-size: 15px;
     font-size: 20px;
 }
 
-.index .div-title {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    align-items: center;
-    color: #8acdeb;
-
-}
-.index ul .p-title {
+.index .div-title  h1{
     color: #8acdeb;
     font-size: 30px;
-    font-weight: bold;
     padding: 0;
     margin: 0;
-    
 }
 
 main.index-main{
@@ -64,10 +57,15 @@ main.index-main{
 }
 
 .index-main .section-search{
-    background-color: #8acdeb;
+    border: 3px solid #8acdeb;
+    background-color: #e4f1fa;
     margin: 0 20% 0 20%;
     padding: 20px;
+    margin-bottom: 40px;
     border-radius: 20px 20px 0 20px;
+}
+.index-main .section-search:hover{
+    box-shadow: 0 1px 10px #8acdeb;
 }
 
 .index-main .filter-option{
@@ -78,7 +76,7 @@ main.index-main{
 
 }
 
-.index-main .filter-option h1{
+.index-main .filter-option h2{
     margin-bottom: 2dvh;
 }
 
@@ -179,19 +177,31 @@ main.index-main{
     
     text-decoration: none;
     background-color: #8acdeb;
+    box-shadow: 0 1px 5px #8acdeb;
     padding: 10px;
     border-radius: 5px;
 }
 
 .index-main .section-contact
 {
-    border: 1px solid black;
     margin: 20px;
     padding: 10px;
-
 }
 
-.index-main .section-contact .form-contact
+.index-main .section-contact .container-form{
+
+    margin: 0 30%;
+    border: 3px solid #8acdeb;
+    background-color: #e4f1fa;
+    border-radius: 10px 10px 0 10px;
+    padding: 15px;
+}
+
+.index-main .section-contact .container-form:hover{
+    box-shadow: 0 1px 10px #8acdeb;
+}
+
+.index-main .section-contact .container-form .form-contact
 {
     display: flex;
     flex-direction: column;
@@ -200,20 +210,32 @@ main.index-main{
 }
 
 
-.index-main .section-contact .form-contact textarea
+.index-main .section-contact .container-form .form-contact textarea
 {
     max-height: 100px;
     max-width: 50%;
-    width: 461px;
-    height: 377px;
+    height: 100px;
+    width: 50%;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 
-.index-main .section-contact .form-contact .email
+.index-main .section-contact .container-form .form-contact .email
 {
-    width: 20%;
+    width: 50%;
     padding: 10px;
     text-decoration: underline;
+    border-radius: 10px;
+}
+.index-main .section-contact .container-form .form-contact .enviar
+{
+    width: 30%;
+    background-color: #8acdeb;
+    box-shadow: 0 1px 5px #8acdeb;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 .index-main footer{
