@@ -143,16 +143,23 @@ main.index-main{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
     margin: 10px;
     gap: 10px;
 }
 .index-main .card{
     width: 300px;
+    background-color: #fff;
     border: 1px solid #ccc;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
+    
+}
+
+.index-main .card:hover{
+    transform: scale(1.05);
     
 }
 
@@ -163,4 +170,53 @@ main.index-main{
 }
 .index-main .card .card-body{
     padding: 10px;
+    
 }
+.index-main .card .card-body .btn-card{
+    margin: 20px 0 10px 0;
+}
+.index-main .card .card-body .btn-card a{
+    
+    text-decoration: none;
+    background-color: #8acdeb;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.index-main .section-contact
+{
+    border: 1px solid black;
+    margin: 20px;
+    padding: 10px;
+
+}
+
+.index-main .section-contact .form-contact
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+}
+
+
+.index-main .section-contact .form-contact textarea
+{
+    max-height: 100px;
+    max-width: 50%;
+    width: 461px;
+    height: 377px;
+}
+
+
+.index-main .section-contact .form-contact .email
+{
+    width: 20%;
+    padding: 10px;
+    text-decoration: underline;
+}
+
+.index-main footer{
+    background-color: #8acdeb;
+}
+
