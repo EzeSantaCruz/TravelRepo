@@ -27,3 +27,15 @@ body.auto{
     width: 50vw;
     height: 50vh;
 }
+
+.index-main .section-auto-galery{
+    margin-top: 20px;
+    
+}
+
+
+.index-main .section-auto-galery h2{
+    font-size: 32px;
+    /* line-height: 36px; */
+    font-weight: 500;
+}
