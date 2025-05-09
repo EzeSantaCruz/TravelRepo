@@ -142,7 +142,7 @@ main.index-main{
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 10px;
+    margin: 1% 10%;
     gap: 10px;
 }
 .index-main .card{
@@ -154,11 +154,13 @@ main.index-main{
     display: flex;
     flex-direction: column;
     border-radius: 10px;
+    height: auto;
+    max-height: 500px;
 }
 
 .index-main .card:hover{
-    transform: scale(1.05);
-    height: aut;
+    transform: scale(1.01);
+    height: auto;
 }
 .index-main .card .card-img{
     /* width: 18rem; */
@@ -169,10 +171,15 @@ main.index-main{
 .index-main .card .card-img img{
     /* width: 18rem; */
     width: 100%;
-    height: 100%;
+    height: 200px;
+    /* object-fit: cover; */
 }
 .index-main .card .card-body{
+    flex: 1; /*Ocupa el espacio disponible*/
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .index-main .card .card-body .btn-card{
@@ -184,6 +191,7 @@ main.index-main{
     box-shadow: 0 1px 5px #8acdeb;
     padding: 10px;
     border-radius: 5px;
+
 }
 
 .index-main .section-contact
@@ -281,7 +289,11 @@ footer .info p{
     font-size: 13px;
 }
 
-footer ul li a{
+footer .footer-container ul{
+    margin-top: 1%;
+}
+
+footer .footer-container ul li a{
     color: black;
     
 }
